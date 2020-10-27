@@ -5,6 +5,7 @@ sdk: org.kde.Sdk
 command: laigter
 rename-icon: laigter
 rename-desktop-file: laigter.desktop
+rename-appdata-file: laigter.appdata.xml
 
 finish-args:
   - --share=ipc
@@ -19,26 +20,9 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/azagaya/laigter/archive/1.10.1.tar.gz
-        sha256: 0425eaef22a75cf7316a56968d923bcd24caaa83d0af1da6125de2ca8818db3c
-
-      # AppStream metadata has been made valid in a separate pull request, which hasn't been merged yet.
-      - type: file
-        url: https://raw.githubusercontent.com/Calinou/laigter/750a1c5ada138ee49053b09c1f4ce9e24c6a03eb/dist/io.itch.azagaya.Laigter.appdata.xml
-        sha256: 44fab7509ec60829c006313ae73e35321d8230d94a4a571f9c9693aa729aad01
-
-      # TODO: Source the file directly from the release after updating Laigter to a version newer than 1.10.1.
-      - type: file
-        url: https://raw.githubusercontent.com/azagaya/laigter/e912ec81de61270d3f6e10cc756444a02755ffff/dist/x-laigter-project.xml
-        sha256: 42c0bdf0da8f18c43131ff9fbff9b916cfcccf76f295cd6bf17c0b940556fbd6
-
-      # TODO: Drop this patch after updating Laigter to a version newer than 1.10.1.
-      - type: patch
-        path: qmake-fix-make-install-for-unix.patch
+        url: https://github.com/azagaya/laigter/archive/1.10.2.tar.gz
+        sha256: db4bb765595eb56da1d416961024c5304b32f0f8c87e58c1abaa8a58241d77ea
 
     post-install:
-      # Replace invalid AppStream metadata with our own valid metadata.
-      - install -Dm644 io.itch.azagaya.Laigter.appdata.xml /app/share/appdata/$FLATPAK_ID.appdata.xml
-
-      - sed -i 's/<icon name="laigter"/<icon name="$FLATPAK_ID"/' x-laigter-project.xml
-      - install -Dm644 x-laigter-project.xml /app/share/mime/packages/$FLATPAK_ID.xml
+      - sed -i 's/<icon name="laigter"/<icon name="$FLATPAK_ID"/' dist/x-laigter-project.xml
+      - install -Dm644 dist/x-laigter-project.xml /app/share/mime/packages/$FLATPAK_ID.xml
