@@ -20,8 +20,10 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/azagaya/laigter/archive/1.10.2.tar.gz
-        sha256: db4bb765595eb56da1d416961024c5304b32f0f8c87e58c1abaa8a58241d77ea
+        url: https://github.com/azagaya/laigter/archive/refs/tags/1.10.7.tar.gz
+        sha256: 528717d6e6384f949f11d39eeb547d1e608a68b7667710e44f7b5ef5537310d4
+      - type: patch
+        path: appdata-fixes.patch
 
     post-install:
       - sed -i 's/<icon name="laigter"/<icon name="$FLATPAK_ID"/' dist/x-laigter-project.xml

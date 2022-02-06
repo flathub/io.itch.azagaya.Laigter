@@ -1,0 +1,35 @@
+--- laigter-1.10.7/dist/laigter.appdata.xml-orig	2022-02-06 16:53:08.756065009 -0500
++++ laigter-1.10.7/dist/laigter.appdata.xml	2022-02-06 17:47:27.122850012 -0500
+@@ -1,12 +1,12 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!-- Copyright 2019 Pablo Ivan Fonovich <azagaya.games@gmail.com> -->
+ <component type="desktop">
+-  <id>laigter</id>
++  <id>io.itch.azagaya.Laigter</id>
+   <metadata_license>CC0-1.0</metadata_license>
+   <project_license>GPL-3.0+</project_license>
+   <name>Laigter</name>
+   <summary>Tool to generate normal, specular, occlussion and parallax maps for 2D textures</summary>
+-  ​<launchable type="desktop-id">laigter</launchable>
++  ​<launchable type="desktop-id">laigter.desktop</launchable>
+   <description>
+     <p>
+       Laigter is a tool that automatically generates maps for dynamic lighting effects
+@@ -29,4 +29,17 @@
+   <url type="donation">https://www.patreon.com/azagaya</url>
+   <developer_name>Pablo Ivan Fonovich</developer_name>
+   <update_contact>azagaya.games@gmail.com</update_contact>
++   <releases>
++    <release version="1.10.7" date="2021-10-18" />
++    <release version="1.10.1" date="2020-07-26" />
++    <release version="1.10" date="2020-07-05" />
++    <release version="1.9.2" date="2020-05-30" />
++    <release version="1.9.1" date="2020-05-10" />
++    <release version="1.9" date="2020-04-16" />
++    <release version="1.8.1" date="2020-02-08" />
++    <release version="1.8" date="2019-12-09" />
++    <release version="1.7" date="2019-10-05" />
++    <release version="1.6" date="2019-09-04" />
++  </releases>
++  <content_rating type="oars-1.1" />
+ </component>
