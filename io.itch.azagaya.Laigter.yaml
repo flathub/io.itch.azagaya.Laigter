@@ -1,6 +1,6 @@
 app-id: io.itch.azagaya.Laigter
 runtime: org.kde.Platform
-runtime-version: "5.14"
+runtime-version: "5.15-21.08"
 sdk: org.kde.Sdk
 command: laigter
 rename-icon: laigter
