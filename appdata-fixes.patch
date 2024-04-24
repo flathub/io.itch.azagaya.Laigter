@@ -1,5 +1,5 @@
---- laigter-1.10.7/dist/laigter.appdata.xml-orig	2022-02-06 16:53:08.756065009 -0500
-+++ laigter-1.10.7/dist/laigter.appdata.xml	2022-02-06 17:47:27.122850012 -0500
+--- laigter-1.11.0/dist/laigter.appdata.xml-orig	2022-02-06 16:53:08.756065009 -0500
++++ laigter-1.11.0/dist/laigter.appdata.xml	2022-02-06 17:47:27.122850012 -0500
 @@ -1,12 +1,12 @@
  <?xml version="1.0" encoding="UTF-8"?>
  <!-- Copyright 2019 Pablo Ivan Fonovich <azagaya.games@gmail.com> -->
@@ -15,11 +15,12 @@
    <description>
      <p>
        Laigter is a tool that automatically generates maps for dynamic lighting effects
-@@ -29,4 +29,17 @@
+@@ -29,4 +29,18 @@
    <url type="donation">https://www.patreon.com/azagaya</url>
    <developer_name>Pablo Ivan Fonovich</developer_name>
    <update_contact>azagaya.games@gmail.com</update_contact>
 +   <releases>
++    <release version="1.11.0" date="2023-08-15" />
 +    <release version="1.10.7" date="2021-10-18" />
 +    <release version="1.10.1" date="2020-07-26" />
 +    <release version="1.10" date="2020-07-05" />
