@@ -10,7 +10,8 @@ rename-appdata-file: laigter.appdata.xml
 finish-args:
   - --share=ipc
   - --share=network
-  - --socket=x11
+  - --socket=wayland
+  - --socket=fallback-x11
   - --filesystem=home
   - --device=dri
 
