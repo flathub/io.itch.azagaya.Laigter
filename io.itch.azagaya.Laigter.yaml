@@ -1,6 +1,6 @@
 app-id: io.itch.azagaya.Laigter
 runtime: org.kde.Platform
-runtime-version: "5.15-23.08"
+runtime-version: "6.9"
 sdk: org.kde.Sdk
 command: laigter
 rename-icon: laigter
@@ -20,12 +20,19 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/azagaya/laigter/archive/refs/tags/1.11.0.tar.gz
-        sha256: 77823b770f099843e1c0f6408156367c3f12b22dc897781aebe079c8a67c62e4
+        url: https://github.com/azagaya/laigter/archive/refs/tags/1.12.1.tar.gz
+        sha256: 45a1489115dc8dbdfafcc621aa6f88ebffba15d6441040d1a2dc7879232e7e69
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/azagaya/laigter/releases/latest
+          version-query: .tag_name | sub("^v"; "")
+          url-query: |
+            "https://github.com/azagaya/laigter/archive/refs/tags/" + .tag_name + ".tar.gz"
+          timestamp-query: .published_at
+
       - type: patch
         path: appdata-fixes.patch
 
     post-install:
       - sed -i 's/<icon name="laigter"/<icon name="$FLATPAK_ID"/' dist/x-laigter-project.xml
       - install -Dm644 dist/x-laigter-project.xml /app/share/mime/packages/$FLATPAK_ID.xml
-      
