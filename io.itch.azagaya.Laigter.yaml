@@ -1,6 +1,6 @@
 app-id: io.itch.azagaya.Laigter
 runtime: org.kde.Platform
-runtime-version: "6.9"
+runtime-version: '6.9'
 sdk: org.kde.Sdk
 command: laigter
 rename-icon: laigter
@@ -21,8 +21,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/azagaya/laigter/archive/refs/tags/1.12.1.tar.gz
-        sha256: 45a1489115dc8dbdfafcc621aa6f88ebffba15d6441040d1a2dc7879232e7e69
+        url: https://github.com/azagaya/laigter/archive/refs/tags/1.13.0.tar.gz
+        sha256: 48abe20d9e15be441c094bfc9f9a4453e79f42394a31fc937b0406ed87ff01e8
         x-checker-data:
           type: json
           url: https://api.github.com/repos/azagaya/laigter/releases/latest
