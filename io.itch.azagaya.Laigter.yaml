@@ -21,8 +21,8 @@ modules:
 
     sources:
       - type: archive
-        url: https://github.com/azagaya/laigter/archive/refs/tags/1.13.0.tar.gz
-        sha256: 48abe20d9e15be441c094bfc9f9a4453e79f42394a31fc937b0406ed87ff01e8
+        url: https://github.com/azagaya/laigter/archive/refs/tags/1.13.1.tar.gz
+        sha256: 4ef9e3287d28b9b7a6530e95510c6c72d0fad931a5f948ac747b9bec4e699d31
         x-checker-data:
           type: json
           url: https://api.github.com/repos/azagaya/laigter/releases/latest
