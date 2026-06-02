@@ -15,8 +15,9 @@
    <description>
      <p>
        Laigter is a tool that automatically generates maps for dynamic lighting effects
-@@ -29,4 +29,20 @@
+@@ -29,4 +29,21 @@
    <url type="donation">https://www.patreon.com/azagaya</url>
++  <url type="help">https://laigter.readthedocs.io/en/latest/</url>
    <developer_name>Pablo Ivan Fonovich</developer_name>
    <update_contact>azagaya.games@gmail.com</update_contact>
 +   <releases>
